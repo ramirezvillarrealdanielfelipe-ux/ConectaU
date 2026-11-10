@@ -1,0 +1,5 @@
+{
+  "nombre": "Daniel Ramirez",
+  "descripcion": "Estudiante de ingeniería, me gusta jugar videojuegos y leer libros.",
+  "gustos": ["pop", "fútbol", "hamburguesa", "videojuegos", "libros"]
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conecta U</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Conecta U</h1>
+    <p>Publica tu perfil, trae el de tus compañeros y descubre con quién tienes más en común.</p>
+  </header>
+
+  <main>
+    <section class="panel lateral" aria-label="Mi perfil">
+      <div id="preview" class="cabecera"></div>
+
+      <label>Nombre
+        <input id="nombre" autocomplete="off">
+      </label>
+
+      <label>Descripción personal
+        <textarea id="descripcion" rows="3"></textarea>
+      </label>
+
+      <label>Gustos o intereses
+        <small>(mínimo 5, separados por coma)</small>
+        <textarea id="gustos" rows="3" placeholder=" "></textarea>
+      </label>
+
+      <button id="btn-generar" type="button">Generar perfil.json</button>
+
+      <p id="aviso-perfil" class="aviso" role="status"></p>
+
+      <button id="btn-copiar" class="sec" type="button">
+        Copiar URL de mi perfil
+      </button>
+    </section>
+
+    <section class="panel" aria-labelledby="t-conectar">
+      <h2 id="t-conectar">Conectar compañeros</h2>
+
+      <label>URL del perfil.json de un compañero
+        <input id="url" type="url" placeholder=" ">
+      </label>
+
+      <button id="btn-agregar" type="button">Consultar perfil</button>
+
+      <p id="aviso-url" class="aviso" role="status"></p>
+
+      <div id="resultados"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
